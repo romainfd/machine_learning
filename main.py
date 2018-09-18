@@ -4,8 +4,8 @@ from sklearn import decomposition
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("--degreeMax", type=int, default=7, help="The program will loop over degrees from 1 to maxDegree and use linear combinations of polynomial functions.")
-parser.add_argument("--PCA", type=str, default='False', help="Should the program use PCA (Principal Component Analysis) ?")
+parser.add_argument("--degreeMax", type=int, default=7, help="The program will loop over degrees from 1 to degreeMax and use linear combinations of polynomial functions of these degrees.")
+parser.add_argument("--PCA", type=str, default='False', help="Should the program use PCA (Principal Component Analysis) ? [False]/True")
 args = parser.parse_args()
 args.PCA = (args.PCA != 'False')
 
