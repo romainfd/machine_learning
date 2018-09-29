@@ -22,12 +22,14 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 
 # List of the projects
 1. Introduction to the Machine Learning Pipeline
- - Loading and inspecting the provided data (temperature, soil moisture and number of new cells). 
- - Preprocessing to remove an outlier, normalize all the inputs and expand the feature space with polynomial basis functions to be able to fit with a linear model.
-- Use of a simple [Least Square regression](https://en.wikipedia.org/wiki/Linear_least_squares) to predict the number of new cells based on the temperature and soil moisture using linear combinations of polynomial functions. 
-- Illustration of overfitting for high degree polynomial functions.
-* `make all` to run
-* possibilities to add PCA ([Principal Component Analysis] or degreeMax flags
+* Pipeline explanation:
+  * Loading and inspecting the provided data (temperature, soil moisture and number of new cells). 
+  * Preprocessing to remove an outlier, normalize all the inputs and expand the feature space with polynomial basis functions to be able to fit with a linear model.
+  * Use of a simple [Least Square regression](https://en.wikipedia.org/wiki/Linear_least_squares) to predict the number of new cells based on the temperature and soil moisture using linear combinations of polynomial functions. 
+  * Illustration of overfitting for high degree polynomial functions.
+* Pipeline in action:
+  * `make all` to run
+  * possibilities to add PCA ([Principal Component Analysis] or degreeMax flags
 
 2. Use of 2 supervised learning methods
 * `make kNN` to use the kNN method to recognized handwritten digits based on the [k-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
