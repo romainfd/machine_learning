@@ -25,7 +25,7 @@ for i in range(10):
 plt.show()
 
 # Run kNN algorithm
-k = input("Choose k, ie how many neighbors do you want to consider ? ")
+k = int(input("Choose k, ie how many neighbors do you want to consider ? "))
 y_pred = zeros(X_test.shape[0])
 
 # Get prediction for each instance
