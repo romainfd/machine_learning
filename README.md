@@ -39,7 +39,7 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 * Feature Selection: `make FS
 * SVD: `make SVD`
 * PCA: `make PCA`
-* NMF: `make NMF
+* NMF: `make NMF`
 
 4. Introduction to Tensorflow
 * Neural Network to learn on the MNIST dataset
@@ -56,7 +56,7 @@ see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/mas
    * First example: determining the decision boundary with a linear kernel
    * Second example: Gaussian kernel to find a [non-linear decision boundary](https://github.com/romainfd/machine_learning/blob/master/TD6/SVM/2.gaussian_sigma%3D0.05_C%3D50)
    * Third example: Gaussian kernel in case of blur boundary
-   * `make SVM1` or `make SVM2` or `make SVM3
+   * `make SVM1` or `make SVM2` or `make SVM3`
 * Adaboost:
    * Implementation of the [adaboost method on Decision Trees](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_100trees_depth%3D8) to reduce the variance
    * Evaluation of the [optimal depth](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_accuracy_vs_depth)
