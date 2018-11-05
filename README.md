@@ -34,3 +34,19 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 2. Use of 2 supervised learning methods
 * `make kNN` to use the kNN method to recognized handwritten digits based on the [k-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 * `make LR` to use [Logistic Regression method](https://en.wikipedia.org/wiki/Logistic_regression) to find the [decision boundary in a binary classification problem](https://en.wikipedia.org/wiki/Decision_boundary). Our use case is to determine if a student will be admitted to university based on his grades for 2 exams. To do so, we minimize a cost function (the errors on the prediction of admission) using a [batch gradient descent method](https://en.wikipedia.org/wiki/Gradient_descent) (from scipy or a mini-batch gradient descent I wrote but uncommenting it at the end of TD2/LR/main.py)
+
+3. TBD
+
+4. Introduction to Tensorflow
+* Neural Network to learn on the MNIST dataset
+   * `make NN` to launch the model
+* Neural Network to find the type of landscape based on characteristics of the picture
+   * `make HW` to launch the model (and a 2-minute training)
+   * The report is available [here](https://github.com/romainfd/machine_learning/blob/master/TD4/Report/Report.pdf)
+
+5. Introduction to Keras
+see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/master/TD5/cnn_text_categorization.ipynb)
+
+6. SVM and boosting on Decision Trees
+* SVM
+   * First example: determining the decision boundary with a linear kernel
