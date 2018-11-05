@@ -11,7 +11,8 @@ def linearKernel(X1, X2):
     #				for more details).
     for i in range(m):
         for j in range(n):
-            K[i, j] = np.sum(np.cross(X1[i], X2[j]))
+            for k in range(X1.shape[1]):
+                K[i, j] += X1[i, k] * X2[j, k]
     # =============================================================
         
     return K

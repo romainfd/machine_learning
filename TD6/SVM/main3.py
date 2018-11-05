@@ -6,8 +6,8 @@ from pylab import scatter, show, legend, xlabel, ylabel, contour, title, plot
 import numpy as np
 
 # Load the dataset
-data = loadtxt('data3.txt', delimiter=',')
-dataeval = loadtxt('data3val.txt', delimiter=',')
+data = loadtxt('./TD6/SVM/data3.txt', delimiter=',')
+dataeval = loadtxt('./TD6/SVM/data3val.txt', delimiter=',')
 X = data[:, 0:2] 
 y = data[:, 2]
 Xval = dataeval[:, 0:2]
@@ -19,9 +19,9 @@ plt.plot(X[:,0][y == 0], X[:,1][y == 0], 'bo', label="c2")
 plt.legend(['y = 1', 'y = 0'],numpoints=1)
 plt.show()
 
-sigma = 0.2 # Gaussian kernel variance
+sigma = 0.05 # Gaussian kernel variance
 
-C = 0.0  # SVM regularization parameter
+C = 1  # SVM regularization parameter
 
 # we create an instance of SVM and fit out data. We do not scale our
 # data since we want to plot the support vectors
