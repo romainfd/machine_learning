@@ -36,7 +36,7 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 * `make LR` to use [Logistic Regression method](https://en.wikipedia.org/wiki/Logistic_regression) to find the [decision boundary in a binary classification problem](https://en.wikipedia.org/wiki/Decision_boundary). Our use case is to determine if a student will be admitted to university based on his grades for 2 exams. To do so, we minimize a cost function (the errors on the prediction of admission) using a [batch gradient descent method](https://en.wikipedia.org/wiki/Gradient_descent) (from scipy or a mini-batch gradient descent I wrote but uncommenting it at the end of TD2/LR/main.py)
 
 3. Various methods
-* Feature Selection: `make FS
+* Feature Selection: `make FS`
 * SVD: `make SVD`
 * PCA: `make PCA`
 * NMF: `make NMF`
