@@ -35,7 +35,11 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 * `make kNN` to use the kNN method to recognized handwritten digits based on the [k-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
 * `make LR` to use [Logistic Regression method](https://en.wikipedia.org/wiki/Logistic_regression) to find the [decision boundary in a binary classification problem](https://en.wikipedia.org/wiki/Decision_boundary). Our use case is to determine if a student will be admitted to university based on his grades for 2 exams. To do so, we minimize a cost function (the errors on the prediction of admission) using a [batch gradient descent method](https://en.wikipedia.org/wiki/Gradient_descent) (from scipy or a mini-batch gradient descent I wrote but uncommenting it at the end of TD2/LR/main.py)
 
-3. TBD
+3. Various methods
+* Feature Selection: `make FS
+* SVD: `make SVD`
+* PCA: `make PCA`
+* NMF: `make NMF
 
 4. Introduction to Tensorflow
 * Neural Network to learn on the MNIST dataset
@@ -48,5 +52,12 @@ Go in the TD project and run the `make` command you want (see 'List of the proje
 see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/master/TD5/cnn_text_categorization.ipynb)
 
 6. SVM and boosting on Decision Trees
-* SVM
+* SVM:
    * First example: determining the decision boundary with a linear kernel
+   * Second example: Gaussian kernel to find a [non-linear decision boundary](https://github.com/romainfd/machine_learning/blob/master/TD6/SVM/2.gaussian_sigma%3D0.05_C%3D50)
+   * Third example: Gaussian kernel in case of blur boundary
+   * `make SVM1` or `make SVM2` or `make SVM3
+* Adaboost:
+   * Implementation of the [adaboost method on Decision Trees](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_100trees_depth%3D8) to reduce the variance
+   * Evaluation of the [optimal depth](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_accuracy_vs_depth)
+   * `make AB`
