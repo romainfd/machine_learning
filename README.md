@@ -61,3 +61,12 @@ see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/mas
    * Implementation of the [adaboost method on Decision Trees](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_100trees_depth%3D8) to reduce the variance
    * Evaluation of the [optimal depth](https://github.com/romainfd/machine_learning/blob/master/TD6/Adaboost/Adaboost_accuracy_vs_depth)
    * `make AB`
+
+7. Regularized Logistic Regression
+* There is no linear decision boundary between the positives and the negatives
+   * We work in a more complex feature space to find one with Logistic Regression
+   * We change our 2D feature to the array of all the polynomial combinaisons of the 2 features (below a certain degree)
+* We need some regularization to avoid overfitting
+   * We add a L2 penalty term on the coefficients to regularize
+   * Comment/uncomment lines 58-60 of main.py to use a home-made stochastic gradient descent
+   * `make RLR`
