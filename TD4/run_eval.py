@@ -27,7 +27,7 @@ t0 = clock()
 h = Network()
 
 i = 0
-while (clock() - t0) < 1:
+while (clock() - t0) < 120:
     h.fit(X_train, Y_train, n_epochs=10)
     i = i + 10
 
