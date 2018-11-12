@@ -10,7 +10,7 @@ import pandas as pd
 import pylab as plt
 
 ### Fetch the data and load it in pandas
-data = pd.read_csv('./TD6/Adaboost/train.csv')
+data = pd.read_csv('./Adaboost/train.csv')
 print("Size of the data: ", data.shape)
 
 #%%

@@ -8,12 +8,12 @@ import numpy as np
 # # Load the dataset
 # # The first two columns contains the exam scores and the third column
 # # contains the label.
-data = loadtxt('./TD6/SVM/data1.txt', delimiter=',')
+data = loadtxt('./SVM/data1.txt', delimiter=',')
 
-X = data[:, 0:2] 
+X = data[:, 0:2]
 y = data[:, 2]
 
-# # Plot data 
+# # Plot data
 plt.plot(X[:, 0][y == 1], X[:, 1][y == 1], 'r+', label="c1")
 plt.plot(X[:, 0][y == 0], X[:, 1][y == 0], 'bo', label="c2")
 plt.legend(['y = 1', 'y = 0'], numpoints=1)

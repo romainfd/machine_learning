@@ -6,8 +6,8 @@ from pylab import scatter, show, legend, xlabel, ylabel, contour, title, plot
 import numpy as np
 
 # Load the dataset
-data = loadtxt('./TD6/SVM/data3.txt', delimiter=',')
-dataeval = loadtxt('./TD6/SVM/data3val.txt', delimiter=',')
+data = loadtxt('./SVM/data3.txt', delimiter=',')
+dataeval = loadtxt('./SVM/data3val.txt', delimiter=',')
 X = data[:, 0:2] 
 y = data[:, 2]
 Xval = dataeval[:, 0:2]

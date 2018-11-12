@@ -8,7 +8,7 @@ import numpy as np
 # # Load the dataset
 # # The first two columns contains the exam scores and the third column
 # # contains the label.
-data = loadtxt('TD6/SVM/data2.txt', delimiter=',')
+data = loadtxt('./SVM/data2.txt', delimiter=',')
 
 X = data[:, 0:2] 
 y = data[:, 2]
