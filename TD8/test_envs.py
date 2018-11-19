@@ -1,4 +1,5 @@
 import gym
+import time
 env = gym.make('CartPole-v0')
 
 for i_episode in range(10):
@@ -11,6 +12,7 @@ for i_episode in range(10):
         observation, reward, done, info = env.step(action)
         if done:
             print("Episode finished after {} timesteps".format(t+1))
+            time.sleep(0.5)
             break
 
 print("State space dimension is:", env.observation_space.shape[0])

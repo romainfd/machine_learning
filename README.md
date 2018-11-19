@@ -70,3 +70,16 @@ see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/mas
    * We add a L2 penalty term on the coefficients to regularize
    * Comment/uncomment lines 58-60 of main.py to use a home-made stochastic gradient descent
    * `make RLR`
+   
+8. Reinforcement Learning
+* Based on the OpenAI Gym suite (the FrozenLake-v0 game)
+   * We try to learn a policy to move on a frozen lake with holes
+   * The results are non deterministic (we can slip on the ice)
+* We implement some Reinforcement Learning methods:
+   * The SARSA algorithm based on the online update of the Q-function, with epsilon-greedy exploration strategy.
+   * The Q-Learning algorithm which is an off-policy algorithm estimating not directly the Q-function of its current policy but it estimates the value of another policy (which is the optimal one). Set `qlearning = True` in main.py 
+* We also implemented 2 different ways of exploring:
+   * The epsilon-greedy exploration strategy
+   * The softmax exploration strategy. Set `softmax = True` in main.py
+* To run the Reinforcement Learning algorithm, run `make`
+* To test the environment is working fine, you can run `make test`. You should see a dummy inverted pendulum.
