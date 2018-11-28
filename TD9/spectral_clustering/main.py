@@ -10,7 +10,7 @@ data = generateData()
 
 # Plot data
 plt.figure(1)
-plt.scatter(data[:,0], data[:,1])
+plt.scatter(data[:, 0], data[:, 1])
 plt.xlabel('x1')  
 plt.ylabel('x2')  
 plt.ylim(-6, 6)  
@@ -25,7 +25,7 @@ centroids, labels = kmeans2(data, k)
 
 # Plot clustering produced by kmeans
 plt.figure(2)
-plt.scatter(data[:,0], data[:,1], c=labels, facecolors="none") 
+plt.scatter(data[:, 0], data[:, 1], c=labels, facecolors="none")
 plt.xlabel('x1')  
 plt.ylabel('x2')  
 plt.ylim(-6, 6)  
@@ -33,27 +33,29 @@ plt.xlim(-6, 6)
 plt.show()
 
 # Find N closest neighbours of each data point
-N = 10
+N = 11
 closestNeighbours = findClosestNeighbours(data, N)
+print(closestNeighbours)
+print(findClosestNeighbours(array([
+    [1, 1],
+    [0, 0],
+    [4, 4]
+]), 3))
 
 # Create adjacency matrix
-W = zeros((data.shape[0], data.shape[0]))
+W = zeros((data.shape[0], data.shape[0]), dtype=int32)
 for i in range(data.shape[0]):
     for j in range(N):
-        W[i,closestNeighbours[i,j]] = 1
-        W[closestNeighbours[i,j],i] = 1
-        
-
+        W[i, closestNeighbours[i, j]] = 1
+        W[closestNeighbours[i, j], i] = 1
 # Perform spectral clustering
 labels = spectralClustering(W, k)  
 
 # Plot clustering produced by spectral clustering
 plt.figure(2)
-plt.scatter(data[:,0], data[:,1], c=labels, facecolors="none") 
+plt.scatter(data[:, 0], data[:, 1], c=labels, facecolors="none")
 plt.xlabel('x1')  
 plt.ylabel('x2')  
 plt.ylim(-6, 6)  
 plt.xlim(-6, 6) 
 plt.show()
-
- 

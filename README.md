@@ -83,3 +83,9 @@ see the [Jupyter notebook](https://github.com/romainfd/machine_learning/blob/mas
    * The softmax exploration strategy. Set `softmax = True` in main.py
 * To run the Reinforcement Learning algorithm, run `make`
 * To test the environment is working fine, you can run `make test`. You should see a dummy inverted pendulum.
+
+9. Unsupervised learning
+* Based on the k-means algorithm
+   * `make KM`
+* Based on Spectral Clustering to also detect non-convex clusters.
+   * `make SC`

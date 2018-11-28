@@ -17,7 +17,7 @@ data_art, labels_art = make_blobs(n_samples=750, centers=centers, cluster_std=0.
 # Visualize dataset
 fig1 = plt.figure(1)
 ax1 = fig1.add_subplot(111)
-ax1.scatter(data_art[:,0],data_art[:,1], c=labels_art)
+ax1.scatter(data_art[:, 0],data_art[:, 1], c=labels_art)
 ax1.set_xlabel('1st dimension')
 ax1.set_ylabel('2nd dimension')
 ax1.set_title("Vizualization of the dataset")
@@ -25,7 +25,7 @@ plt.show()
 
 # Run k-means algorithm for different values of k
 k = 4
-labels_pred_art = kmeans(data_art,k)
+labels_pred_art = kmeans(data_art, k)
 
 
 # Plot clustering results
@@ -50,7 +50,7 @@ images, labels_mnist = read_dataset(n_instances, pca_features);
 
 # Create the dataset (data_mnist) that will be used in clustering
 # load the PCA features of the test data set
-data_mnist = loadtxt("test_data.csv",delimiter=',')
+data_mnist = loadtxt("kmeans/test_data.csv",delimiter=',')
 data_mnist = data_mnist[:n_instances,:pca_features] #only 8 first features are kept 
 
 # Plot 2 out of 8 dimensions of the dataset - colors correspond to true labels
