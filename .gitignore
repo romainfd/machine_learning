@@ -2,3 +2,6 @@
 .idea
 venv
 *__pycache__
+
+# The kaggle competition done as exam
+kaggle

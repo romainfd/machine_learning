@@ -1,0 +1,7 @@
+igraph
+scikit-learn
+nltk
+numpy
+kaggle
+tqdm
+pydotplus
