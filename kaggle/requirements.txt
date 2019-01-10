@@ -1,7 +1,12 @@
-igraph
 scikit-learn
-nltk
+scipy
+matplotlib
 numpy
-kaggle
 tqdm
+nltk
+gensim
+keras
+pandas
+jupyter
 pydotplus
+tensorflow
